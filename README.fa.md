@@ -54,8 +54,11 @@ private UUID accountId;
 | Public API         | ✅ UUID |
 
 ### 🎯 جمله مصاحبه‌ای
+<hr/>
 EN:
 We use UUID as a primary key to guarantee global uniqueness, especially in distributed or microservice-based systems.
-
+<hr/>
 DE:
 UUIDs werden verwendet, um eine globale Eindeutigkeit sicherzustellen, insbesondere in verteilten Systemen.
+
+<hr/>

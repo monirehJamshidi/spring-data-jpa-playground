@@ -70,8 +70,8 @@ UUIDs werden verwendet, um eine globale Eindeutigkeit sicherzustellen, insbesond
 - حتی داخل Controller
 
 #### ❌ مشکل OSIV = true
-- Query در Controller اجرا می‌شود 😱
-- N+1 Problem پنهان می‌ماند
-- Transaction boundary نامشخص
-- Lazy Loading خارج از Service
+- در حقیقت Query در Controller اجرا می‌شود 😱
+- و N+1 Problem پنهان می‌ماند
+- و  Transaction boundary نامشخص
+- و Lazy Loading خارج از Service
 

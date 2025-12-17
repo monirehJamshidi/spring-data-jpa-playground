@@ -39,8 +39,10 @@ private UUID accountId;
 ✔ امکان تولید در Client یا Service بدون DB roundtrip
 
 ### ❌ معایب UUID
-❌ Index بزرگ‌تر
-❌ Performance کمی ضعیف‌تر نسبت به Long
+❌ اول Index بزرگ‌تر
+
+❌ و بعد Performance کمی ضعیف‌تر نسبت به Long
+
 ❌ خوانایی کمتر
 
 ### 🟡 چه زمانی UUID؟

@@ -100,3 +100,50 @@ DE:
 Durch das Deaktivieren von Open Session in View werden saubere Transaktionsgrenzen erzwungen.
 
 <hr/>
+
+
+### 3️⃣ تفاوت Grammar Methods vs @Query
+#### 🔹 Grammar Methods (Derived Queries)
+Spring Data از روی اسم متد Query می‌سازد.
+```java
+List<Account> findByAccountBalanceLessThan(Long balance);
+
+```
+
+##### ✅ مزایا
+✔ بدون JPQL
+
+✔ خوانا
+
+✔ سریع برای CRUD ساده
+
+✔ و Database-agnostic
+
+##### ❌ معایب
+❌ برای Queryهای پیچیده طولانی می‌شود
+
+❌ برای Joinهای پیچیده سخت
+
+#### 🔹 @Query (Programmatic)
+Query را خودت می‌نویسی.
+```java
+@Query("select a from Account a where a.accountBalance > :min")
+List<Account> getAccounts(@Param("min") Long min);
+
+```
+
+#####✅ مزایا
+❌ وابسته به Query
+
+❌ احتمال خطای Runtime
+
+❌ خوانایی کمتر
+
+#### 🎯 جمله مصاحبه‌ای
+#### EN:
+Derived queries are preferred for simple lookups, while @Query is used when more control or complex joins are required.
+
+#### DE:
+Abgeleitete Queries eignen sich für einfache Abfragen, während @Query für komplexe Queries verwendet wird.
+
+

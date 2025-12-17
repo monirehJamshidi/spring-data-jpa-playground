@@ -66,7 +66,7 @@ UUIDs werden verwendet, um eine globale Eindeutigkeit sicherzustellen, insbesond
 ### 2️⃣ چرا open-in-view=false ؟
 ### 🔹 Open Session in View (OSIV) چیست؟
 به‌طور پیش‌فرض:
-- Hibernate Session تا پایان Response باز می‌ماند
+- در حقیقت Hibernate Session تا پایان Response باز می‌ماند
 - حتی داخل Controller
 
 #### ❌ مشکل OSIV = true

@@ -75,3 +75,28 @@ UUIDs werden verwendet, um eine globale Eindeutigkeit sicherzustellen, insbesond
 - و  Transaction boundary نامشخص
 - و Lazy Loading خارج از Service
 
+#### چگونه ✅ open-in-view=false
+
+```yaml
+spring:
+  jpa:
+    open-in-view: false
+
+```
+
+✔ دیتابیس فقط در Service Layer
+
+✔ LazyInitializationException زود دیده می‌شود (خوبه!)
+
+✔ معماری تمیز
+
+✔ قابل تست‌تر
+
+#### 🎯 جمله مصاحبه‌ای
+EN:
+Disabling Open Session in View enforces proper transaction boundaries and prevents accidental database access in the controller layer.
+
+DE:
+Durch das Deaktivieren von Open Session in View werden saubere Transaktionsgrenzen erzwungen.
+
+<hr/>

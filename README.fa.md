@@ -133,7 +133,14 @@ List<Account> getAccounts(@Param("min") Long min);
 ```
 
 ##### ✅ مزایا
+✔ کنترل کامل
 
+✔ و Query پیچیده
+
+✔ و Join، Subquery، Aggregation
+
+
+##### ❌ معایب
 ❌ وابسته به Query
 
 ❌ احتمال خطای Runtime

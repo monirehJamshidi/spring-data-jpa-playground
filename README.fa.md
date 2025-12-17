@@ -132,7 +132,8 @@ List<Account> getAccounts(@Param("min") Long min);
 
 ```
 
-#####✅ مزایا
+##### ✅ مزایا
+
 ❌ وابسته به Query
 
 ❌ احتمال خطای Runtime

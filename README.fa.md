@@ -31,8 +31,11 @@ private UUID accountId;
 
 ### ✅ مزایای UUID
 ✔ یکتا در کل سیستم (نه فقط یک جدول)
+
 ✔ مناسب Microservices
+
 ✔ امن‌تر از ID ترتیبی (حدس‌زدنی نیست)
+
 ✔ امکان تولید در Client یا Service بدون DB roundtrip
 
 ### ❌ معایب UUID

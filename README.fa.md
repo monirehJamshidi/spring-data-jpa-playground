@@ -75,7 +75,7 @@ UUIDs werden verwendet, um eine globale Eindeutigkeit sicherzustellen, insbesond
 - و  Transaction boundary نامشخص
 - و Lazy Loading خارج از Service
 
-#### چگونه ✅ open-in-view=false
+#### مزایای ✅ open-in-view=false
 
 ```yaml
 spring:
@@ -86,7 +86,7 @@ spring:
 
 ✔ دیتابیس فقط در Service Layer
 
-✔ LazyInitializationException زود دیده می‌شود (خوبه!)
+✔ در حقیقت LazyInitializationException زود دیده می‌شود (خوبه!)
 
 ✔ معماری تمیز
 

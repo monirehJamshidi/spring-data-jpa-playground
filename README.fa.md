@@ -18,9 +18,9 @@
 - تفاوت grammar vs @Query
 - REST method semantics (GET vs POST)
 
-## 1️⃣ چرا UUID به‌عنوان Primary Key؟
+### 1️⃣ چرا UUID به‌عنوان Primary Key؟
 
-### 🔹 UUID چیست؟
+#### 🔹 UUID چیست؟
 یک شناسه ۱۲۸ بیتی یکتا در سطح جهانی (Globally Unique)
 ```java
 @Id
@@ -29,7 +29,7 @@ private UUID accountId;
 
 ```
 
-### ✅ مزایای UUID
+#### ✅ مزایای UUID
 ✔ یکتا در کل سیستم (نه فقط یک جدول)
 
 ✔ مناسب Microservices
@@ -38,14 +38,14 @@ private UUID accountId;
 
 ✔ امکان تولید در Client یا Service بدون DB roundtrip
 
-### ❌ معایب UUID
+#### ❌ معایب UUID
 ❌ اول Index بزرگ‌تر
 
 ❌ و بعد Performance کمی ضعیف‌تر نسبت به Long
 
 ❌ خوانایی کمتر
 
-### 🟡 چه زمانی UUID؟
+#### 🟡 چه زمانی UUID؟
 | سناریو             | انتخاب |
 | ------------------ | ------ |
 | Microservices      | ✅ UUID |
@@ -53,7 +53,7 @@ private UUID accountId;
 | Monolith ساده      | ❌ Long |
 | Public API         | ✅ UUID |
 
-### 🎯 جمله مصاحبه‌ای
+#### 🎯 جمله مصاحبه‌ای
 <hr/>
 EN:
 We use UUID as a primary key to guarantee global uniqueness, especially in distributed or microservice-based systems.

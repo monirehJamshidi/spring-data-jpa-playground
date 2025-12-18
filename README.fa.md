@@ -154,13 +154,18 @@ Derived queries are preferred for simple lookups, while @Query is used when more
 #### DE:
 Abgeleitete Queries eignen sich für einfache Abfragen, während @Query für komplexe Queries verwendet wird.
 
+<hr/>
+
 ### 4️⃣ REST Method Semantics (GET vs POST)
 این سؤال خیلی خیلی مهمه 🔥
 
 #### 🔹 GET
 ✔ Read-only
+
 ✔ Idempotent
+
 ✔ Cacheable
+
 ✔ بدون تغییر state
 
 ```http request
@@ -175,8 +180,11 @@ GET /accounts/123
 
 #### 🔹 POST
 ✔ Create
+
 ✔ Non-idempotent
+
 ✔ Body دارد
+
 ✔ تغییر state
 
 ```http request

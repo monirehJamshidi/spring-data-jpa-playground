@@ -212,6 +212,8 @@ GET must not change the server state, while POST is used to create new resources
 GET darf den Serverzustand nicht verändern, während POST zum Erstellen neuer Ressourcen verwendet wird.
 
 
+<hr/>
+
 #### 🧠 خلاصه طلایی (برای حفظ کردن)
 
 - UUID ensures global uniqueness

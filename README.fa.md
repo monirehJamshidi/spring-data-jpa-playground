@@ -214,7 +214,7 @@ GET darf den Serverzustand nicht verändern, während POST zum Erstellen neuer R
 
 <hr/>
 
-#### 🧠 خلاصه طلایی (برای حفظ کردن)
+### 🧠 خلاصه طلایی (برای حفظ کردن)
 
 - UUID ensures global uniqueness
 

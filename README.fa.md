@@ -154,4 +154,72 @@ Derived queries are preferred for simple lookups, while @Query is used when more
 #### DE:
 Abgeleitete Queries eignen sich für einfache Abfragen, während @Query für komplexe Queries verwendet wird.
 
+### 4️⃣ REST Method Semantics (GET vs POST)
+این سؤال خیلی خیلی مهمه 🔥
 
+#### 🔹 GET
+✔ Read-only
+✔ Idempotent
+✔ Cacheable
+✔ بدون تغییر state
+
+```http request
+GET /accounts/123
+
+```
+
+#### ❌ نباید:
+- Save
+- Update
+- Delete
+
+#### 🔹 POST
+✔ Create
+✔ Non-idempotent
+✔ Body دارد
+✔ تغییر state
+
+```http request
+@GetMapping("/save.do")
+
+```
+
+
+#### 🔹 اشتباه رایج (که تو اول داشتی)
+
+```java
+@GetMapping("/save.do")
+
+```
+
+#### ❌ نقض REST
+
+
+### ✅ REST صحیح
+
+```java
+@PostMapping("/accounts")
+public Account create(@RequestBody @Valid Account account)
+
+```
+
+### 🎯 جمله مصاحبه‌ای
+
+### EN:
+GET must not change the server state, while POST is used to create new resources and is not idempotent.
+
+### DE:
+GET darf den Serverzustand nicht verändern, während POST zum Erstellen neuer Ressourcen verwendet wird.
+
+
+#### 🧠 خلاصه طلایی (برای حفظ کردن)
+
+- UUID ensures global uniqueness
+
+- open-in-view=false enforces clean architecture
+
+- Grammar methods are simple and readable
+
+- @Query is powerful and flexible
+
+- GET is read-only, POST modifies state
